@@ -575,14 +575,175 @@ a {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: #2e2f42;
   padding-left: 16px;
-  margin-right: 24px;
 }
 
+/* 1
+
+
+
+
+*/
 .main-form {
-  padding: 200px 0 200px 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+}
+
+.form-text {
+  color: #2e2f42;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+  padding-top: 72px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.name {
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  padding-top: 34px;
+}
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99999999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 408px;
-  height: 584px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  padding: 72px 24px 24px 24px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  transition: stroke 250ms linear;
+}
+.modal-close-btn :active,
+.modal-close-btn:hover {
+  background-color: #404bbf;
+}
+.rewiew-form-field-label {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.02em;
   display: block;
+  margin-bottom: 4px;
+}
+.review-form-description {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.rewiew-form-input {
+  padding-left: 38px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #2e2f4266;
+  transition: border-color 250ms linear;
+  outline: 0px solid transparent;
+}
+.rewiew-form-input:focus {
+  border-color: #4d5ae5;
+}
+.rewiew-form-field-wraper {
+  margin-bottom: 8px;
+}
+.review-form-input-icon {
+  fill: #2e2f42;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.review-form-input-wraper {
+  position: relative;
+}
+
+.rewiew-form-input:focus + review-form-input-icon {
+  fill: #4d5ae5;
+}
+.comment-aria {
+  width: 100%;
+  height: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding: 8px 16px;
+  resize: none;
+  transition: border-color 250ms linear;
+  outline: 0px solid transparent;
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.02em;
+}
+.comment-aria:focus {
+  border-color: #4d5ae5;
+}
+.comment-aria::placeholder {
+  color: #8e8f99;
+}
+.review-form-checkbox-label {
+  color: #8e8f99;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.02em;
+}
+.checkbox-privacy {
+  color: #4d5ae5;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16em;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+}
+.review-form-submit-btn {
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: #4d5ae5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 168px;
+  color: #e7e9fc;
+  transition: background-color 250ms linear, color 250ms linear;
 }
