@@ -810,6 +810,7 @@ a {
   + .review-form-checkbox-label
   > .review-form-own-checkbox {
   border-color: #404bbf;
+  background-color: #404bbf;
   stroke-width: 1px;
   border: none;
   fill: #f4f4fd;
