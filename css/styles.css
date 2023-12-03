@@ -554,7 +554,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .footer-btn {
@@ -563,7 +563,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   max-width: 165px;
   height: 40px;
   display: inline-flex;
