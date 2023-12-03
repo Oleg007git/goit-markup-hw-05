@@ -775,8 +775,6 @@ a {
 .review-form-comment:focus {
   border-color: #4d5ae5;
 }
-/* CHECBOX */
-
 .review-form-checkbox-wrapper {
   margin-bottom: 16px;
 }
@@ -808,11 +806,11 @@ a {
 .review-form-checkbox:checked
   + .review-form-checkbox-label
   > .review-form-own-checkbox {
-  background-color: #404bbf;
   border-color: #404bbf;
   fill: #404bbf;
   stroke-width: 1px;
-  stroke: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .review-form-checkbox:focus
