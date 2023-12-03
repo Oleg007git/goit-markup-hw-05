@@ -534,6 +534,7 @@ a {
   fill: #f4f4fd;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
 }
 .footer-contact-link:hover,
 .footer-contact-link:focus {
@@ -547,14 +548,13 @@ a {
   display: flex;
   gap: 24px;
 }
-.label-footer {
-}
+
 .mail-text {
   color: #fff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   margin-bottom: 16px;
 }
 .footer-btn {
@@ -564,7 +564,8 @@ a {
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-
+  max-width: 165px;
+  height: 40px;
   display: inline-flex;
   padding: 8px 24px;
   justify-content: center;
@@ -572,6 +573,7 @@ a {
   gap: 16px;
   border-radius: 4px;
   background: #4d5ae5;
+  border: none;
 }
 .email-footer {
   color: #fff;
