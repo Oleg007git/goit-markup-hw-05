@@ -555,7 +555,7 @@ a {
   font-weight: 500;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  padding-bottom: 0px 0px 16px 0px;
+  margin-bottom: 16px;
 }
 .footer-button {
   color: #fff;
@@ -573,7 +573,7 @@ a {
   border-radius: 4px;
   background: #4d5ae5;
 }
-.email {
+.email-footer {
   color: #fff;
   font-size: 12px;
   font-weight: 400;
@@ -584,7 +584,6 @@ a {
   flex-shrink: 0;
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background: #2e2f42;
   padding-left: 16px;
   border: 1px solid #fff;
